@@ -48,5 +48,14 @@ func main() {
 		arr[i], _ = strconv.Atoi(nums[i])
 		total += arr[i]
 	}
+	fmt.Println("Out Put")
+	for i := 0; i < len(nums); i++ {
+		print(arr[i])
+		if i == len(nums) - 1 {
+			fmt.Println("")
+		} else {
+			fmt.Print(" ")
+		}
+	}
 	fmt.Println(total)
 }
